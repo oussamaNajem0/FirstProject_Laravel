@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layouts.master')
 @section('title','Home Page')
 @section('content')
     <main class="max-w-6xl mx-auto">

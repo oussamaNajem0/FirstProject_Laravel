@@ -40,7 +40,7 @@ Route::get('/', function () {
 })->name("home");
 
 Route::get('/about-us', function () {
-    return view("pages.about", []);
+    return view("pages.about");
 })->name("about");
 
 Route::view('contact-me', "pages.contact", [
@@ -61,3 +61,11 @@ Route::get('category', function () {
 // Route::get('/search', function (Request $request) {
 //     return response($request->name .' '. $request->city);
 // });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

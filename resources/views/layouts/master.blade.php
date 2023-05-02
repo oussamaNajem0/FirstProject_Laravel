@@ -9,14 +9,14 @@
 <body>
 
     {{-- Start Navigation bar  --}}
-    @include('layout.navbar')
+    @include('layouts.navbar')
     {{-- End Navigation bar  --}}
 
 
     @yield('content')
 
     {{-- Start side bar  --}}
-    @include('layout.sidebar')
+    @include('layouts.sidebar')
     {{-- End sibe bar  --}}
 
 
